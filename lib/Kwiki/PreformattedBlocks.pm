@@ -1,11 +1,8 @@
 package Kwiki::PreformattedBlocks;
-use strict;
-use warnings;
-use Kwiki::Plugin '-Base';
-our $VERSION = '0.10';
+use Kwiki::Plugin -Base;
+our $VERSION = '0.11';
 
 const class_id => 'preformatted_blocks';
-const class_title => 'Preformatted Blocks';
 
 sub register {
     my $registry = shift;
@@ -22,7 +19,6 @@ sub to_html {
       "</pre>\n";
 }
 
-1;
 __DATA__
 
 =head1 NAME 

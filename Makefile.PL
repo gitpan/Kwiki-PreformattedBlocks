@@ -8,7 +8,7 @@ version_from('lib/Kwiki/PreformattedBlocks.pm');
 
 requires(qw(
     perl 5.6.1
-    Kwiki 0.31
+    Kwiki 0.34
 ));
 
 check_nmake();

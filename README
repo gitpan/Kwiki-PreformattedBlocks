@@ -4,11 +4,10 @@ NAME
 SYNOPSIS
         .pre
         sub to_html {
-            join "\n",
-              '<pre class="formatter_pre">',
+            join '',
+              qq{<pre class="formatter_pre">\n},
               $self->block_text,
-              '</pre>',
-              '';
+              "</pre>\n";
         }
         .pre
 
